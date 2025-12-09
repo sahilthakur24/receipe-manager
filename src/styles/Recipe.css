@@ -1,0 +1,54 @@
+.Recipe {
+    width: 95%;
+    max-width: 300px;
+    background-color: white;
+    padding: 15px 20px 5px;
+    color: black;
+    border-radius: 5px;
+
+    *::first-letter {
+        text-transform: capitalize;
+    }
+
+}
+
+.Recipe.title,
+.Recipe.description {
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.Recipe.title {
+    font-size: 1.3rem;
+}
+ 
+.Recipe.description {
+    margin-top: 10px;
+    font-size: .99rem;
+}
+
+.Recipe fieldset {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 10px 0;
+    legend {
+        text-align: center;
+        padding: 0 10px;
+        font-size: .9rem;
+    }
+}
+
+.Recipe button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 93%;
+    margin-bottom: 10px;
+}
+
+.Recipe ul {
+    li {
+        margin-left: 15px;
+    }
+}

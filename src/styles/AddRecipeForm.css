@@ -1,0 +1,53 @@
+#recipes-form {
+    z-index: 1;
+    a {
+        right: 5%;
+        span { margin-left: 3px; }
+    }
+}
+
+form {
+    max-width: 470px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+    input, textarea, button {
+        border: 1px solid rgba(0, 0, 0, .5);
+        outline: 0;
+        border-radius: 3px;
+    }
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+form input {
+    text-indent: 5px;
+    padding: 10px 0;
+    font-size: 1.03rem;
+}
+
+form textarea {
+    padding: 10px 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #ddd;
+    background-color: #07bb19;
+    transition: background-color 250ms;
+}
+
+form button:hover {
+    background-color: #078f15;
+}

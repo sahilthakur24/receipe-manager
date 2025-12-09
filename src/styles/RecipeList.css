@@ -1,0 +1,30 @@
+#recipes-container {
+    z-index: 0;
+    overflow-y: hidden;
+    a {
+        left: 5%;
+        span { margin-right: 3px; }
+    }
+}
+
+.recipe-list {
+    width: min(100%, 1000px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: max(50px, 5%) 0;
+    overflow-y: scroll;
+}
+
+.recipe-list::after {
+    content: "";
+    width: 300px;
+}
+
+.no-recipe {
+    font-size: 1.7em;
+    color: #555;
+    font-weight: bold;
+}

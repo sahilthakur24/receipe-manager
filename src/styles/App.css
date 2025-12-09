@@ -1,0 +1,13 @@
+:root {
+    --bg-color: #0d0d0d;
+}
+
+.App {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
