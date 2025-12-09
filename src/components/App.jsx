@@ -8,6 +8,8 @@ import RecipeList from "./RecipeList";
 function App() {
   // Liste des recettes
   const [recipes, setRecipes] = useState([]);
+  // view: 'home' | 'add' | 'list'
+  const [view, setView] = useState('home');
 
   // Load recipes from server on mount
   useEffect(() => {
@@ -15,9 +17,9 @@ function App() {
     async function load() {
       try {
         const res = await fetch('http://localhost:3000/api/recipes');
-        if (!res.ok) return;
-        const data = await res.json();
-        if (!cancelled) setRecipes(data);
+          if (!res.ok) return;
+          const data = await res.json();
+          if (!cancelled) setRecipes(data);
       } catch (e) {
         // ignore fetch errors
       }
@@ -46,7 +48,7 @@ function App() {
       if (!res.ok) return;
       const created = await res.json();
       setRecipes(prev => [...prev, created]);
-      showRecipes();
+      setView('list');
     } catch (e) {
       // ignore
     }
@@ -67,28 +69,44 @@ function App() {
     }
   };
 
-  // Afficher le formulaire
-  const hideRecipes = () => {
-    document.querySelector('#recipes-container').style.zIndex = 0;
-    document.querySelector('#recipes-form').style.zIndex = 1;
-  }
-
-  // Afficher les recettes
-  const showRecipes = () => {
-    document.querySelector('#recipes-form').style.zIndex = 0;
-    document.querySelector('#recipes-container').style.zIndex = 1;
-  };
+  // Navigation helpers
+  const goHome = () => setView('home');
+  const goAdd = () => setView('add');
+  const goList = () => setView('list');
 
   return (
     <div className="App">
-      <Section id='recipes-form' title='Receipe Manager'>
-        <AddRecipeForm onNewRecipe={addRecipe} />
-        <a onClick={showRecipes}>Recipes<span>&gt;</span></a>
-      </Section>
-      <Section id='recipes-container' title={ recipes.length ? 'My recipes' : '' }>
-        <RecipeList data={recipes} onDeleteRecipe={deleteRecipe} />
-        <a onClick={hideRecipes}><span>&lt;</span>Welcome</a>
-      </Section>
+      {view === 'home' && (
+        <Section id='home' title='Recipe Manager'>
+          <img src="/home-bg.jpg" alt="background" className="home-bg-img" />
+          <div className="home-overlay">
+            <div style={{display: 'flex', gap: '12px'}}>
+              <button onClick={goAdd}>Add Recipe</button>
+              <button onClick={goList}>View Recipes</button>
+            </div>
+          </div>
+        </Section>
+      )}
+
+      {view === 'add' && (
+        <Section id='recipes-form' title='Add Recipe'>
+          <AddRecipeForm onNewRecipe={addRecipe} />
+          <div style={{marginTop: 12}}>
+            <button onClick={goList}>View Recipes &gt;</button>
+            <button onClick={goHome} style={{marginLeft:8}}>&lt; Home</button>
+          </div>
+        </Section>
+      )}
+
+      {view === 'list' && (
+        <Section id='recipes-container' title={ recipes.length ? 'My recipes' : '' }>
+          <RecipeList data={recipes} onDeleteRecipe={deleteRecipe} />
+          <div style={{marginTop: 12}}>
+            <button onClick={goAdd}>+ Add Recipe</button>
+            <button onClick={goHome} style={{marginLeft:8}}>&lt; Home</button>
+          </div>
+        </Section>
+      )}
     </div>
   );
 }

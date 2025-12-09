@@ -11,3 +11,48 @@
     flex-direction: column;
 }
 
+/* Home view background (uses <img> for better control) */
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* background image element - place image at `public/home-bg.jpg` or update src */
+.home-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* use 'cover' to fill and crop, 'contain' to show full image */
+    object-position: center;
+    z-index: 1;
+}
+
+/* ensure section title is above the image */
+#home .title {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.home-overlay {
+    position: relative;
+    z-index: 2;
+    background: rgba(0,0,0,0.45);
+    padding: 24px 28px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#home button {
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
