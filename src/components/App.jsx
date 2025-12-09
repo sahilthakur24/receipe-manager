@@ -90,20 +90,26 @@ function App() {
 
       {view === 'add' && (
         <Section id='recipes-form' title='Add Recipe'>
+          <img src="/recipe.jpg" alt="recipes background" className="list-bg-img" />
+          <div className="list-overlay">
           <AddRecipeForm onNewRecipe={addRecipe} />
           <div style={{marginTop: 12}}>
             <button onClick={goList}>View Recipes &gt;</button>
             <button onClick={goHome} style={{marginLeft:8}}>&lt; Home</button>
+          </div>
           </div>
         </Section>
       )}
 
       {view === 'list' && (
         <Section id='recipes-container' title={ recipes.length ? 'My recipes' : '' }>
-          <RecipeList data={recipes} onDeleteRecipe={deleteRecipe} />
-          <div style={{marginTop: 12}}>
-            <button onClick={goAdd}>+ Add Recipe</button>
-            <button onClick={goHome} style={{marginLeft:8}}>&lt; Home</button>
+          <img src="/recipe.jpg" alt="recipes background" className="list-bg-img" />
+          <div className="list-overlay">
+            <RecipeList data={recipes} onDeleteRecipe={deleteRecipe} />
+            <div style={{marginTop: 12}}>
+              <button onClick={goAdd}>+ Add Recipe</button>
+              <button onClick={goHome} style={{marginLeft:8}}>&lt; Home</button>
+            </div>
           </div>
         </Section>
       )}

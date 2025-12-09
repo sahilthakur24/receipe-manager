@@ -1,58 +1,335 @@
 {
   "recipes": [
     {
-      "id": "1765280580962",
-      "title": "Test_1",
-      "description": "Test_1",
+      "id": "1765289958095",
+      "title": "Vegetable Stir Fry",
+      "description": " Quick, colorful, and healthy mixed veggies tossed in soy sauce.",
       "ingredients": [
-        "Test_1"
+        "Broccoli, bell peppers, carrots, soy sauce, garlic, sesame oil."
       ],
       "steps": [
-        "Test_1"
+        "Chop vegetables.",
+        "Heat oil and sauté garlic.",
+        "Add veggies and stir fry.",
+        "Add soy sauce.",
+        "Cook until tender-crisp."
       ]
     },
     {
-      "id": "1765280597243",
-      "title": "Test_2",
-      "description": "Test_2",
+      "id": "1765290025292",
+      "title": "Paneer Butter Masala",
+      "description": "Creamy tomato-based curry with paneer cubes.",
       "ingredients": [
-        "Test_2"
+        "Paneer, tomato puree, cream, butter, garlic, garam masala."
       ],
       "steps": [
-        "Test_2"
+        "Sauté onion, garlic, and spices.",
+        "Add tomato puree and simmer.",
+        "Stir in cream and butter.",
+        "Add paneer cubes.",
+        "Serve hot with naan."
       ]
     },
     {
-      "id": "1765280610544",
-      "title": "Test_3",
-      "description": "Test_3",
+      "id": "1765290059991",
+      "title": "Aloo Paratha",
+      "description": "Stuffed Indian flatbread with spiced potato filling.",
       "ingredients": [
-        "Test_3"
+        "Wheat flour, boiled potatoes, chili, coriander, ghee."
       ],
       "steps": [
-        "Test_3"
+        "Prepare dough.",
+        "Mash potatoes with spices.",
+        "Roll dough, stuff filling.",
+        "Cook on tawa with ghee."
       ]
     },
     {
-      "id": "1765280639727",
-      "title": "Test_5",
-      "description": "Test_5",
+      "id": "1765290092138",
+      "title": "Chole (Chickpea Curry)",
+      "description": "North Indian chickpea curry with rich spices.",
       "ingredients": [
-        "Test_5"
+        "Chickpeas, onion, tomato, ginger, garlic, garam masala."
       ],
       "steps": [
-        "Test_5"
+        "Soak and boil chickpeas.",
+        "Sauté onion, garlic, ginger.",
+        "Add tomatoes and spices.",
+        "Mix chickpeas and simmer."
       ]
     },
     {
-      "id": "1765280651744",
-      "title": "Test_6",
-      "description": "Test_6",
+      "id": "1765290160455",
+      "title": "Palak Paneer",
+      "description": "Spinach curry with paneer cubes.",
       "ingredients": [
-        "Test_6"
+        "Spinach, paneer, garlic, onion, cream, spices."
       ],
       "steps": [
-        "Test_6"
+        "Blanch spinach.",
+        "Blend into puree.",
+        "Cook with spices.",
+        "Add paneer cubes.",
+        "Finish with cream."
+      ]
+    },
+    {
+      "id": "1765290206390",
+      "title": "Vegetable Pulao",
+      "description": "Fragrant rice cooked with mixed vegetables.",
+      "ingredients": [
+        "Basmati rice, peas, carrots, beans, cumin, garam masala."
+      ],
+      "steps": [
+        "Wash rice.",
+        "Sauté spices and veggies.",
+        "Add rice and water.",
+        "Cook until fluffy."
+      ]
+    },
+    {
+      "id": "1765290276141",
+      "title": "Paneer Tikka",
+      "description": "Grilled paneer cubes marinated in spices.",
+      "ingredients": [
+        "Paneer, yogurt, chili powder, turmeric, garam masala."
+      ],
+      "steps": [
+        "Prepare marinade.",
+        "Coat paneer cubes.",
+        "Skewer and grill."
+      ]
+    },
+    {
+      "id": "1765290311690",
+      "title": "Vegetable Soup",
+      "description": "Light and nourishing soup.",
+      "ingredients": [
+        "Carrots, beans, peas, corn, garlic, vegetable stock"
+      ],
+      "steps": [
+        "Chop vegetables.",
+        "Sauté garlic.",
+        "Add stock and veggies.",
+        "Simmer until tender."
+      ]
+    },
+    {
+      "id": "1765290356771",
+      "title": "Rajma (Kidney Bean Curry)",
+      "description": "Comforting curry with kidney beans.",
+      "ingredients": [
+        "Kidney beans, onion, tomato, garlic, ginger, spices."
+      ],
+      "steps": [
+        "Soak and boil beans.",
+        "Prepare onion-tomato masala.",
+        "Add beans and simmer."
+      ]
+    },
+    {
+      "id": "1765290395271",
+      "title": "Vegetable Sandwich",
+      "description": "Quick snack with fresh veggies.",
+      "ingredients": [
+        "Bread, cucumber, tomato, onion, butter, chutney."
+      ],
+      "steps": [
+        "Spread butter and chutney.",
+        "Layer veggies.",
+        "Grill or serve fresh."
+      ]
+    },
+    {
+      "id": "1765290437890",
+      "title": "Vegetable Upma",
+      "description": "South Indian semolina dish with veggies.",
+      "ingredients": [
+        "Rava (semolina), carrots, beans, peas, curry leaves."
+      ],
+      "steps": [
+        "Roast semolina.",
+        "Sauté veggies and spices.",
+        "Add water and semolina.",
+        "Cook until fluffy."
+      ]
+    },
+    {
+      "id": "1765290484687",
+      "title": "Vegetable Hakka Noodles",
+      "description": "Indo-Chinese noodles with stir-fried veggies.",
+      "ingredients": [
+        "Noodles, cabbage, carrots, beans, soy sauce, garlic."
+      ],
+      "steps": [
+        "Boil noodles.",
+        "Stir fry veggies.",
+        "Add noodles and sauces."
+      ]
+    },
+    {
+      "id": "1765290522721",
+      "title": "Vegetable Korma",
+      "description": "Rich curry with mixed vegetables in cashew gravy.",
+      "ingredients": [
+        "Carrots, beans, peas, potatoes, cashews, cream, spices."
+      ],
+      "steps": [
+        "Prepare cashew paste.",
+        "Sauté onion and spices.",
+        "Add veggies and cook.",
+        "Stir in cream."
+      ]
+    },
+    {
+      "id": "1765290588158",
+      "title": "Vegetable Lasagna",
+      "description": "Layered pasta with veggies, tomato sauce, and cheese.",
+      "ingredients": [
+        "Lasagna sheets, spinach, zucchini, tomato sauce, ricotta, mozzarella."
+      ],
+      "steps": [
+        "Cook lasagna sheets.",
+        "Layer sauce, veggies, and cheese.",
+        "Repeat layers.",
+        "Bake until bubbly."
+      ]
+    },
+    {
+      "id": "1765290633174",
+      "title": "Falafel Wraps",
+      "description": "Crispy chickpea patties wrapped in pita bread.",
+      "ingredients": [
+        "Chickpeas, garlic, parsley, cumin, pita bread, tahini sauce."
+      ],
+      "steps": [
+        "Blend chickpeas with spices.",
+        "Shape patties and fry.",
+        "Fill pita with falafel and veggies.",
+        "Drizzle tahini"
+      ]
+    },
+    {
+      "id": "1765290676554",
+      "title": "Greek Salad",
+      "description": "Refreshing salad with feta and olives.",
+      "ingredients": [
+        "Cucumber, tomato, onion, olives, feta, olive oil, oregano."
+      ],
+      "steps": [
+        "Chop vegetables.",
+        "Mix with olives and feta.",
+        "Drizzle olive oil and oregano."
+      ]
+    },
+    {
+      "id": "1765290738837",
+      "title": "Vegetable Sushi Rolls",
+      "description": "Japanese rice rolls with fresh veggies.",
+      "ingredients": [
+        "Sushi rice, nori sheets, cucumber, avocado, carrots, soy sauce."
+      ],
+      "steps": [
+        "Cook sushi rice.",
+        "Place rice on nori.",
+        "Add veggie strips.",
+        "Roll tightly and slice"
+      ]
+    },
+    {
+      "id": "1765290782020",
+      "title": "Shakshuka (Veg Version)",
+      "description": "Middle Eastern tomato stew with poached eggs (can be made egg-free with tofu).",
+      "ingredients": [
+        "Tomatoes, bell peppers, onion, garlic, paprika, eggs/tofu."
+      ],
+      "steps": [
+        "Sauté onion, garlic, and peppers.",
+        "Add tomatoes and spices.",
+        "Simmer until thick.",
+        "Add eggs/tofu and cook."
+      ]
+    },
+    {
+      "id": "1765290851854",
+      "title": "Vegetable Manchurian",
+      "description": "Indo-Chinese dish with fried veggie balls in tangy sauce.",
+      "ingredients": [
+        "Cabbage, carrots, flour, soy sauce, garlic, chili sauce."
+      ],
+      "steps": [
+        "Mix grated veggies with flour.",
+        "Shape balls and deep fry.",
+        "Prepare garlic-chili sauce.",
+        "Toss balls in sauce."
+      ]
+    },
+    {
+      "id": "1765290882701",
+      "title": "Stuffed Bell Peppers",
+      "description": "Colorful peppers filled with spiced rice and veggies.",
+      "ingredients": [
+        "Bell peppers, rice, onion, tomato, peas, cheese."
+      ],
+      "steps": [
+        "Hollow peppers.",
+        "Cook rice with veggies.",
+        "Stuff peppers.",
+        "Bake until tender."
+      ]
+    },
+    {
+      "id": "1765290913503",
+      "title": "Vegetable Pakoras",
+      "description": "Crispy fritters made with gram flour batter.",
+      "ingredients": [
+        "Onion, potato, spinach, gram flour, chili, turmeric."
+      ],
+      "steps": [
+        "Mix veggies with gram flour batter.",
+        "Heat oil.",
+        "Fry until golden."
+      ]
+    },
+    {
+      "id": "1765290941934",
+      "title": "Spinach & Corn Sandwich",
+      "description": "Creamy spinach and corn filling in toasted bread.",
+      "ingredients": [
+        "Spinach, corn, butter, cheese, bread."
+      ],
+      "steps": [
+        "Sauté spinach and corn.",
+        "Mix with cheese.",
+        "Spread on bread.",
+        "Grill until crisp."
+      ]
+    },
+    {
+      "id": "1765290971536",
+      "title": "Vegetable Khichdi",
+      "description": "Comforting rice and lentil dish with veggies.",
+      "ingredients": [
+        "Rice, moong dal, carrots, peas, turmeric, ghee."
+      ],
+      "steps": [
+        "Wash rice and dal.",
+        "Cook with veggies and spices.",
+        "Add ghee before serving."
+      ]
+    },
+    {
+      "id": "1765291002284",
+      "title": "Stuffed Paratha (Mixed Veg)",
+      "description": "Indian flatbread stuffed with spiced mixed vegetables.",
+      "ingredients": [
+        "Wheat flour, potatoes, peas, carrots, chili, coriander."
+      ],
+      "steps": [
+        "Prepare dough.",
+        "Mash veggies with spices.",
+        "Stuff and roll parathas.",
+        "Cook on tawa with ghee."
       ]
     }
   ]
